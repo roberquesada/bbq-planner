@@ -1,0 +1,72 @@
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "barbecues" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "title" varchar, "venue" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150220021436')
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "barbecues" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "title" varchar, "venue" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150220021436')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "barbecues" ("date", "title", "venue", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2015-12-19 00:00:00.000000"], ["title", "Favian Lueilwitz Birthday BBQ"], ["venue", "Kessler, Witting and Feil"], ["created_at", "2015-12-04 08:51:40.365786"], ["updated_at", "2015-12-04 08:51:40.365786"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "barbecues" ("date", "title", "venue", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["date", "2015-12-23 00:00:00.000000"], ["title", "Ona Batz II Birthday BBQ"], ["venue", "New Saraiberg"], ["created_at", "2015-12-04 08:51:40.372527"], ["updated_at", "2015-12-04 08:51:40.372527"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "barbecues" ("date", "title", "venue", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2015-12-25 00:00:00.000000"], ["title", "Indiana dragons victory BBQ"], ["venue", "Stoltenberg-Daugherty"], ["created_at", "2015-12-04 08:51:40.375752"], ["updated_at", "2015-12-04 08:51:40.375752"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "barbecues" ("date", "title", "venue", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["date", "2015-12-05 00:00:00.000000"], ["title", "Timmy Marquardt Birthday BBQ"], ["venue", "Kerluke-Moore"], ["created_at", "2015-12-04 08:51:40.379610"], ["updated_at", "2015-12-04 08:51:40.379610"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "barbecues" ("date", "title", "venue", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2015-12-14 00:00:00.000000"], ["title", "Marjory McLaughlin Birthday BBQ"], ["venue", "Doyle Inc"], ["created_at", "2015-12-04 08:51:40.383696"], ["updated_at", "2015-12-04 08:51:40.383696"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "barbecues" ("date", "title", "venue", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["date", "2015-12-05 00:00:00.000000"], ["title", "Stephen Kunde Birthday BBQ"], ["venue", "Lake Lazaro"], ["created_at", "2015-12-04 08:51:40.389816"], ["updated_at", "2015-12-04 08:51:40.389816"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "barbecues" ("date", "title", "venue", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2015-12-20 00:00:00.000000"], ["title", "Arizona people victory BBQ"], ["venue", "Hudsonborough"], ["created_at", "2015-12-04 08:51:40.396939"], ["updated_at", "2015-12-04 08:51:40.396939"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "barbecues" ("date", "title", "venue", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["date", "2015-12-20 00:00:00.000000"], ["title", "Nyasia Beatty Birthday BBQ"], ["venue", "Kuhlman-Wilderman"], ["created_at", "2015-12-04 08:51:40.403255"], ["updated_at", "2015-12-04 08:51:40.403255"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "barbecues" ("date", "title", "venue", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2015-12-21 00:00:00.000000"], ["title", "Missouri elves victory BBQ"], ["venue", "Heaneymouth"], ["created_at", "2015-12-04 08:51:40.410785"], ["updated_at", "2015-12-04 08:51:40.410785"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "barbecues" ("date", "title", "venue", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["date", "2015-12-16 00:00:00.000000"], ["title", "Utah nemesis victory BBQ"], ["venue", "West Jesus"], ["created_at", "2015-12-04 08:51:40.421850"], ["updated_at", "2015-12-04 08:51:40.421850"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for ::1 at 2015-12-04 09:51:56 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BarbecuesController#index as HTML
+  [1m[35mBarbecue Load (0.2ms)[0m  SELECT "barbecues".* FROM "barbecues"  ORDER BY "barbecues"."date" ASC
+  Rendered barbecues/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 2463ms (Views: 2460.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application-e05fdbe43a53099bd24c698fa06e99e6.css?body=1" for ::1 at 2015-12-04 09:51:59 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-12-04 09:51:59 +0100
+
+
+Started GET "/assets/application-7d414ddbc3f0d3f3757d82e4689d0ed5.js?body=1" for ::1 at 2015-12-04 09:51:59 +0100
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for ::1 at 2015-12-04 09:51:59 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-12-04 09:51:59 +0100
+
+
+Started GET "/assets/barbecues-eaaf9f34e46a7c9e8d93f22ef00c438d.js?body=1" for ::1 at 2015-12-04 09:51:59 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for ::1 at 2015-12-04 09:51:59 +0100
