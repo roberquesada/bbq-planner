@@ -38,6 +38,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :production do
   # Use postgresql as the database for Active Record
   gem 'pg'
+  # Use rails_12factor for Heroku deployment
+  gem 'rails_12factor'
 end
 
 group :development, :test do
